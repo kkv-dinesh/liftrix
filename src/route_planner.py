@@ -156,7 +156,7 @@ class RoutePlanner:
 
     def suggest_optimal_carrier(self, origin=None, destination=None, product_type=None, date=None, date_range=None):
         # If carrier column exists in data, suggest best carrier for the route
-        if self.df.empty():
+        if self.df.empty:
             return "No data available."
         if 'Carrier' not in self.df.columns:
             return "Carrier information not available in the data."
